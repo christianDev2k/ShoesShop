@@ -1,3 +1,3 @@
 ## Shoes Shop
-- Descriptions: Demo a shoes shop have a list product and user can add the product to cart then edit and delete product from cart.
+- Description : Demo a shoeshop that have a list of product , user can also add products to cart and delete them from cart. 
 - Skill: useState hooks.
