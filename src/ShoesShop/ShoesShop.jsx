@@ -49,7 +49,6 @@ const ShoesShop = () => {
 
                 {/* Cart Modal  */}
                 <CartModal carts={carts} setCart={setCart} />
-
             </div>
         </div>
     );

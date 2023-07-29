@@ -1,11 +1,7 @@
 import React from 'react';
-import { Modal } from 'flowbite';
 
 const ProductDetailModal = ({ product, handleSetCart }) => {
     const { image, name, price, description, quantity } = product;
-    const modal = new Modal(document.getElementById('cartModal'), {
-        placement: 'top-right',
-    });
 
     return (
         <div>
@@ -108,12 +104,9 @@ const ProductDetailModal = ({ product, handleSetCart }) => {
                                     <div>
                                         <button
                                             data-modal-hide='productDetailModal'
-                                            // data-modal-target='cartModal'
-                                            // data-modal-toggle='cartModal'
-                                            onClick={() => {
-                                                handleSetCart(product);
-                                                modal.show();
-                                            }}
+                                            data-modal-target='cartModal'
+                                            data-modal-toggle='cartModal'
+                                            onClick={() => handleSetCart(product)}
                                             type='button'
                                             className='w-full text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-bold rounded-full text-xs px-7 py-3'
                                         >
