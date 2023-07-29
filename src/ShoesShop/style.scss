@@ -1,0 +1,16 @@
+.modal-info,
+.cart-list {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.cart-input-qty {
+    &:focus {
+        box-shadow: none;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        display: none;
+    }
+}
